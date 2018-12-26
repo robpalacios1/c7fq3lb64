@@ -29,7 +29,7 @@
                 <div class="month"><%= l(expense.date, format: "%b") %></div>
               </td>
               <td class="concept"><%= expense.concept %></td>
-              <td class="category text-right"><%= expense.category.name %></td>
+              <td class="category text-right"><%= expense.category_id %></td>
               <td class="text-right amount" style="width: 170px;"><%= number_to_currency(expense.amount, precision: 0) %></td>
             </tr>
           <% end %>
