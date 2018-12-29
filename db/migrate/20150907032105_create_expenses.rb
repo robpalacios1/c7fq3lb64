@@ -5,7 +5,6 @@ class CreateExpenses < ActiveRecord::Migration
       t.date :date
       t.string :concept
       t.decimal :amount
-      t.integer :user_id
 
       t.timestamps null: false
     end
