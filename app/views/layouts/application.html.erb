@@ -29,6 +29,12 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+  <ul class="nav navbar-nav navbar-right">
+            <% if user_signed_in? %>
+              <li><%= link_to('Salir', destroy_user_session_path, method: :delete) %></li>
+           <% end %>
+         </ul>
+
   <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
   <% end %>
